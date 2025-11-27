@@ -16,28 +16,28 @@ namespace ConsoleApp13
 
         {
 
-            //int countday;
-            //int daysteps;
-            //int countsteps = 0;
-            //int count10ksteps = 0;
-            //int i;
+            int countday;
+            int daysteps;
+            int countsteps = 0;
+            int count10ksteps = 0;
+            int i;
 
-            //Console.Write("how many days");
-            //countday = int.Parse(Console.ReadLine());
+            Console.Write("how many days");
+            countday = int.Parse(Console.ReadLine());
 
-            //for (i = 0; i <= countday; i++)
-            //{
-            //    Console.WriteLine("how many steps you did");
-            //    daysteps = int.Parse(Console.ReadLine());
-            //    countsteps = countsteps + daysteps;
+            for (i = 0; i <= countday; i++)
+            {
+               Console.WriteLine("how many steps you did");
+               daysteps = int.Parse(Console.ReadLine());
+               countsteps = countsteps + daysteps;
 
-            //    if (daysteps > 10000)
-            //        count10ksteps++;
-            //}
+               if (daysteps > 10000)
+                   count10ksteps++;
+            }
 
-            //Console.Write("total steps: " + countsteps);
+            Console.Write("total steps: " + countsteps);
 
-            //Console.Write("days above 10k steps: " + count10ksteps);
+            Console.Write("days above 10k steps: " + count10ksteps);
 
 
 
@@ -71,4 +71,5 @@ namespace ConsoleApp13
         
 
     }
+
 }

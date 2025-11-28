@@ -27,12 +27,12 @@ namespace ConsoleApp13
 
             for (i = 0; i <= countday; i++)
             {
-               Console.WriteLine("how many steps you did");
-               daysteps = int.Parse(Console.ReadLine());
-               countsteps = countsteps + daysteps;
+                Console.WriteLine("how many steps you did");
+                daysteps = int.Parse(Console.ReadLine());
+                countsteps = countsteps + daysteps;
 
-               if (daysteps > 10000)
-                   count10ksteps++;
+                if (daysteps > 10000)
+                    count10ksteps++;
             }
 
             Console.Write("total steps: " + countsteps);
@@ -47,28 +47,29 @@ namespace ConsoleApp13
 
             Console.WriteLine("how many students");
             int studentscount = int.Parse(Console.ReadLine());
-            int averagegrade;
-            int maxgrade = 100;
+            int averagegrade = 0;
+            int maxgrade = 0;
             int grade;
-            int highestgrade;
+            int studentspass = 0;
             int i;
 
             for (i = 0; i < studentscount; i++)
             {
                 Console.WriteLine("enter grade");
                 grade = int.Parse(Console.ReadLine());
+                if (grade >= 55)
+                    studentspass++;
 
-                averagegrade = grade/studentscount;
-
-                Console.WriteLine("averagegrade is: " + averagegrade);
-
-
-
-
+               if (grade > maxgrade)
+                    maxgrade = grade;
+                averagegrade += grade;
             }
+            Console.WriteLine(averagegrade / studentscount);
+            Console.WriteLine(maxgrade);
+            Console.WriteLine(studentspass);
         }
 
-        
+
 
     }
 
